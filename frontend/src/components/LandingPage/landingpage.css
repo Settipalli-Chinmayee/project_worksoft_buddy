@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+
+.mainCon{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Fixed Header Styles */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-img {
+  width: 145px;
+  margin-bottom: 10px;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-link {
+  font-size: 16px;
+  font-weight: 500;
+  background-color: rgb(40, 62, 70);
+  border: 1px solid rgb(40, 62, 70);
+  padding: 10px 15px;
+  border-radius: 25px;
+  color: #ffc300;
+}
+
+.btn-link:hover {
+  color: rgb(40, 62, 70);
+  background-color: white;
+}
+
+/* Main Content Styles (Centered Heading) */
+.main-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: #f3f4f6; */
+  padding-top: 80px;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  border-radius: 15px;
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); */
+
+  background-image: linear-gradient(to bottom, #fafafa, #eafad7);
+  width: 760px;
+  height: 760px;
+  /* position: absolute; */
+  z-index: -999;
+  transform: scale(1.1);
+  border-radius: 100%;
+  left: -5%;
+  top: -21%;
+}
+
+.main-heading h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.main-heading span {
+  display: inline-block;
+}
+
+.main-tagline {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #4b5563; 
+  margin: auto 10px auto 10px;
+  width: 50%;
+}
+
+/* Scrollable Content Section */
+.scrollable-content {
+  padding: 20px;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* margin-bottom: 40px; */
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px auto 40px auto;
+  width: 80%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sec-Content {
+  width: 50%;
+}
+
+.section-img {
+  width: 30em;
+  margin-right: 30px;
+}
+
+.sec-heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.btn-link-explore {
+  padding: 12px 20px;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-link-explore {
+  background-color: white;
+  color: rgb(40, 62, 70);
+  border: 1px solid rgb(40, 62, 70);
+  padding: 10px 15px;
+  border-radius: 25px;
+  display: flex;
+  width: fit-content;
+}
+
+.btn-link-explore:hover {
+  color: #ffc300;
+  background-color: rgb(40, 62, 70);
+}
+
+.btn-link-explore img {
+  width: 30px;
+  margin-left: 10px;
+}

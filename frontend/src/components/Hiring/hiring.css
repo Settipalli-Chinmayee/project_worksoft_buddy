@@ -1,0 +1,91 @@
+.form_textarea {
+  resize: none;
+  height: 7em;
+  border: 1px solid gray;
+}
+
+.hire-form input {
+  padding: 0.4rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  border: 1.5px solid #adb5bd;
+  color: #343a40;
+}
+
+.hire-form label {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  color: #495057;
+
+  /* line-height: 0; */
+}
+
+.hire-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.button-hire {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-hire button {
+  width: fit-content;
+}
+
+.form-job-img {
+  display: flex;
+}
+
+.formUI img {
+  margin-right: 5px;
+}
+
+.title-name {
+  position: relative;
+  right: 4px;
+  top: 2px;
+}
+
+.formUI label {
+  color: #283e46;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.formUI textarea {
+  padding: 0.4rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  border: 1.5px solid #adb5bd;
+  color: #343a40;
+}
+
+.cancel_btn {
+  background: url("../../assets/images/cancelBtn.svg");
+}
+.submit_btn {
+  background: url("../../assets/images/submitIconBtn.svg");
+}
+.update_btn {
+  background: url("../../assets/images/updateBtn.svg");
+}
+.cancel_icon_align,
+.submit_icon_align {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  margin: 0 0.2em 0 0;
+}
+.hiringError{
+  display: flex;
+  justify-content: center;
+}

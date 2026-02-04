@@ -1,0 +1,36 @@
+.deleteSection{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.deletedIconc {
+    color: red;
+    border-radius: 25px;
+    /* padding: 6px; */
+    display: inline-flex; /* Add this */
+    align-items: center;
+    justify-content: center;
+    background-color: transparent; /* for clarity */
+    border: none; /* optional */
+    cursor: pointer;
+  }
+
+
+  .makeUploadFileDisabled {
+    color: #283e46; /* Disabled color */
+    border-radius: 25px;
+    padding: 6px;
+    background-color: transparent;
+    border: none;
+    cursor: not-allowed; /* Shows disabled cursor */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none; /* Prevents clicking */
+  }
+  
+  /* .deletedIconc:hover {
+    background-color:#f1aeb5;
+  }
+  
+   */

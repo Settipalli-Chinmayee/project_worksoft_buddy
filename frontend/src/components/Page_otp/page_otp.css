@@ -1,0 +1,58 @@
+.formVerifyOtp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1em;
+}
+.verifyOtpBtn {
+  border: 1px solid #283e46;
+  border-radius: 25px;
+  /* margin-right: 1rem; */
+  /* margin-left: 1rem; */
+  /* margin-top: 20px; */
+  padding: 0.5rem 1rem;
+  width: 100%;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.verifyResendOtpSection{
+    width: 100%;
+}
+.enabledBtn {
+  background-color: #283e46;
+  color: #ffc300;
+  cursor: pointer;
+}
+
+.enabledBtn:hover {
+  background-color: white;
+  color: #283e46;
+}
+
+.disabledBtn {
+  background-color: #6b7280; /* gray-500 */
+  color: #d1d5db; /* gray-300 */
+  cursor: not-allowed;
+}
+
+.resendOtpContainer {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.resendOtpBtn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.enabledResend {
+  color: #ffc300;
+  cursor: pointer;
+}
+
+.disabledResend {
+  color: #9ca3af; /* gray-400 */
+}

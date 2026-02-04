@@ -1,0 +1,275 @@
+/* Sidebar container */
+.sidebar {
+  width: 220px;
+  background-color: #f7f7f7;
+  padding: 1.1em;
+  /* padding: 20px; */
+  box-sizing: border-box;
+  position: fixed;
+  /* z-index: 9999; */
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 5px 0 -1px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Ensure sidebar takes up the full height */
+  overflow-y: auto; /* Allow sidebar scrolling */
+  /* border: 1px solid red; */
+}
+
+.sidebar-content {
+  flex: 1;
+}
+
+.sidebar-profile {
+  margin-top: auto;
+  padding-top: 1rem;
+  /* border-top: 1px solid #ccc; */
+  text-align: center;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.sidebar-profile img {
+  border-radius: 25px;
+}
+/* Sidebar title */
+.sidebar-title {
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #124265;
+}
+
+/* Sidebar navigation list */
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+
+/* Full row for li */
+.sidebar-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 0.3em 0;
+  position: relative;
+  /* padding: 0.3em 0; */
+  /* border: 1px solid rebeccapurple; */
+}
+
+/* Link inside li */
+.sidebar-list li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.2em 0.2em;
+
+  /* padding: 0.3em 0.2em 0.3em 0.3em; */
+  /* padding: 0.3em 0; */
+  border-radius: 4px;
+  /* border: 1px solid red; */
+}
+.sidebar-list a:hover {
+  background-color: var(--sidebar-active-bg);
+  border-radius: 25px;
+}
+.sidebar-list a.active {
+  /* font-weight: bold; */
+  /* text-decoration: underline; */
+  background-color: var(--sidebar-active-bg);
+  border-radius: 25px;
+  border-right: 3px solid var(--secondary-color);
+}
+
+.removeBackground {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.2em 0.2em;
+  /* padding: 0.3em 0.3em 0.3em 0.3em; */
+  /* padding: 0.3em 0; */
+}
+
+/* Common icon style */
+
+/* Specific icons */
+.referralIcon-light {
+  background-image: url("../../../src/assets/images/allReferralsIcon.svg");
+  background-repeat: no-repeat;
+}
+.referralIcon-dark {
+  background-image: url("../../../src/assets/images/allReferralsIcon-dark.svg");
+  background-repeat: no-repeat;
+}
+
+.departmentIcon-light {
+  background-image: url("../../../src/assets/images/departmentIcon.svg");
+  background-repeat: no-repeat;
+}
+
+.departmentIcon-dark {
+  background-image: url("../../../src/assets/images/departmentIcon-dark.svg");
+  background-repeat: no-repeat;
+}
+
+.userManagementIcon-light {
+  background-image: url("../../assets/images/userManagementIcon.svg");
+  background-repeat: no-repeat;
+}
+.userManagementIcon-dark {
+  background-image: url("../../assets/images/userManagementIcon-dark.svg");
+  background-repeat: no-repeat;
+}
+.iconHire-light {
+  background-image: url("../../assets/images/hiringsIcon.svg");
+  background-repeat: no-repeat;
+}
+.iconHire-dark {
+  background-image: url("../../assets/images/hiringsIcon-dark.svg");
+  background-repeat: no-repeat;
+}
+.iconHome-light {
+  background-image: url("../../assets/images/home-light.svg");
+  background-repeat: no-repeat;
+}
+.iconHome-dark {
+  background-image: url("../../assets/images/home-dark.svg");
+  background-repeat: no-repeat;
+}
+.screen-light {
+  background-image: url("../../assets/images/screening.svg");
+  background-repeat: no-repeats;
+}
+.screen-dark {
+  background-image: url("../../assets/images/screening-dark.svg");
+  background-repeat: no-repeats;
+}
+.settings {
+  background-image: url("../../assets/images/profileSettings.svg");
+  background-repeat: no-repeat;
+}
+/* .nonActiveNames {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 0.5em;
+} */
+
+/* Common icon style */
+.icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+.iconUser {
+  width: 24px;
+  height: 20px;
+  flex-shrink: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+/* Specific icons */
+.homeIcon {
+  background-image: url("../../assets/images/home.svg");
+}
+
+.licenseFormIcon {
+  background-image: url("../../assets/images/licenseForm.svg");
+}
+
+.inviteIcon {
+  background-image: url("../../assets/images/inviteUser.svg");
+}
+
+.referralsByDeptContainer {
+  display: flex;
+  flex-direction: column; /* Stack vertically */
+  gap: 8px; /* Some space between main and sub-links */
+}
+
+.multiDropDownContainer {
+  padding-left: 20px; /* Indent sub-links nicely */
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.company_logo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: center;
+  align-content: center;
+}
+
+.company_logo p {
+  font-weight: bold;
+  color: var(--main-color);
+  font-size: 1.2rem;
+}
+
+.themeChange-light {
+  padding: 8px;
+  border-radius: 50%;
+  border: 1px solid #343a4096;
+}
+
+.themeChange-light:hover {
+  background-color: #dbd6d6;
+  transition: background-color 2s ease, transform 3s ease;
+}
+.themeChange-dark {
+  padding: 8px;
+  border-radius: 50%;
+  border: 1px solid #c0c0c0;
+}
+
+.themeChange-dark:hover {
+  background-color: black;
+  transition: background-color 2s ease, transform 3s ease;
+}
+
+.hiring_sticker {
+  color: #28a745;
+  line-height: 100%;
+  white-space: nowrap;
+  position: absolute;
+  top: -44%;
+  right: -3%;
+  background: linear-gradient(
+      301deg,
+      rgba(40, 167, 69, 0.01) 9.55%,
+      rgba(40, 167, 69, 0.1) 67.28%
+    ),
+    #fff;
+  /* border: 0.125rem solid #28a745; */
+  color: #28a745;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.7em;
+  display: inline-block;
+}

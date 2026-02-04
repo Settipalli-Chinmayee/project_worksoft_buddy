@@ -1,0 +1,167 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
+/* @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@import "tailwindcss";
+
+/* @tailwind base;
+ 
+@tailwind components;
+ 
+@tailwind utilities; */
+/* 
+@layer base {
+  :root {
+    --font-display: "Inter", sans-serif;
+    --font-display2: "Outfit", sans-serif;
+  }
+} */
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(to right, #283e46 0%, #76b7b7 80%);
+  }
+
+  .dark-theme-text-gradient {
+    @apply bg-clip-text text-transparent;
+    background: #adb5bd;
+    background: linear-gradient(to right, #adb5bd 0%, #ced4da 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* background-image: linear-gradient(to right, #adb5bd 0%, #adb5bda6 80%); */
+    /* background-image: linear-gradient(to right, #ffc300 0%, #ffc300 80%); */
+  }
+}
+
+.font-display {
+  font-family: var(--font-display2);
+  line-height: 1.2;
+}
+.font-display-main {
+  font-family: var(--font-display);
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear,
+input[type="password"]::-webkit-textfield-decoration-container {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+@keyframes toastBorderFill {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.toast-border-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background-color: #b91c1c; /* red-700 */
+  animation: toastBorderFill 2.5s linear forwards;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.scrollbar-hidden {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.main-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Main content area */
+.main-content {
+  margin-left: 220px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --main-color: #283e46;
+  --secondary-color: #ffc300; /*button text colour mainly used for*/
+  --sidebar-active-bg: #9ca3af1f;
+  --font-size: 16px;
+  --font-display: "Outfit", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+input,
+button {
+  font-family: "Inter", sans-serif;
+}
+/* button {
+  cursor: pointer;
+} */
+
+.authenticationAnchorTag {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+.ellipsis-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* .kLMEOz {
+  background-color: red;
+} */
+
+/* .custom-table-wrapper .rdt_Pagination svg {
+  color: black !important;
+  fill: black !important;
+}
+
+.custom-table-wrapper .rdt_Pagination .disabled svg {
+  color: #ccc !important;
+  fill: #ccc !important;
+} */
+
+.custom-table-wrapper .rdt_Pagination svg {
+  color: var(--pagination-icon-color);
+  fill: var(--pagination-icon-color);
+  transition: color 0.3s ease;
+}
+
+.custom-table-wrapper .rdt_Pagination .disabled svg {
+  color: var(--pagination-icon-disabled-color);
+  fill: var(--pagination-icon-disabled-color);
+  cursor: not-allowed;
+}
+
+.custom-table-wrapper .rdt_Pagination svg:hover:not(.disabled) {
+  filter: brightness(85%);
+}
+
+/* .toast-dark{
+  border: 2px solid #adb5bd;
+  border-radius: 8px;
+} */
+/* .toast-light{
+  border: 2px solid #333;
+  border-radius: 8px;
+} */

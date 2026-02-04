@@ -1,0 +1,19 @@
+.topHeadingOne {
+  /* color: var(--main-color); */
+  color: #112A46;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+.topHeadingTwo {
+  text-align: left;
+  line-height: 1.5;
+  color: #343a40;
+  font-size: 16px;
+}
+
+.user_name{
+    color: #283e46;
+  /* font-size: 20px; */
+  /* font-weight: 500; */
+}

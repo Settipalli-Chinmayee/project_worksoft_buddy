@@ -1,0 +1,41 @@
+.view-profile-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+/* .topSection {
+  background-color: var(--main-color);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+} */
+.view-modal-box {
+  background: white;
+  /* padding: 30px; */
+  border-radius: 10px;
+  width: 90%;
+  max-width: 300px;
+  position: relative;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  height: 50vh;
+  position: relative;
+}
+
+.avatarImageView {
+  border-radius: 50%;
+  background-color: #e1f2ef;
+  margin-top: -2em;
+  width: 75px;
+  /* position: absolute;
+  top: -12%; */
+}
+
+.viewUserName{
+    /* margin: 1em 0 0 0; */
+  font-weight: 600;
+  font-size: 1.1em;
+}

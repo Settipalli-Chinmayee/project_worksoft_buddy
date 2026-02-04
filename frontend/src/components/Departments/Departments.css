@@ -1,0 +1,403 @@
+.departmentsCard {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.eachCard {
+  border: 2px solid #ffc300;
+  width: 30em;
+  height: 15em;
+  padding: 5px;
+  position: relative;
+  /* font-size: 1.5em; */
+  border-radius: 10px; /* Rounded corners */
+  /* background-color: #f8f9fa; Light background */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* .eachCard:nth-child(odd) {
+      background-color: #e9ecef;  Slightly different color for odd cards
+    } */
+
+.displayCentre h1 {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.deptName {
+  height: 100px;
+  background-color: #283e46;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  border: 1px solid lightgray;
+}
+
+.deptDet {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-btn {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  border-radius: 25px;
+  padding: 5px 15px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 10px 0px;
+}
+
+.formHeading {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.addData {
+  display: flex;
+  gap: 5px;
+}
+
+.deptPopup {
+  padding: 10px;
+}
+.button-hire {
+  justify-content: end;
+}
+
+.submit-btn-one {
+  margin-right: 10px;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  color: var(--main-color);
+  border: 1px solid #283e46;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.1em;
+}
+
+.read-img-light {
+  background: url("../../../src/assets/images/info-circle-svgrepo-com.svg");
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+.read-img-dark {
+  background: url("../../../src/assets/images/info-circle-dark-svgrepo-com.svg");
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.change-img {
+  /* background: lightgray; */
+  padding: 10px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute;
+  transform: translate(-50%, -50%);
+  top: 88%;
+  left: 92%; */
+  cursor: pointer;
+}
+
+.eachCard:hover .read-img-light {
+  background: url("../../../src/assets/images/right-arrow-circle-svgrepo-com.svg");
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  transform: scale(1.2);
+  transition: transform 0.5s linear;
+}
+.eachCard:hover .read-img-dark {
+  background: url("../../../src/assets/images/right-arrow-circle-dark-svgrepo-com.svg");
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  transform: scale(1.2);
+  transition: transform 0.5s linear;
+}
+
+.eachCard:hover .change-img {
+  background-color: #8080805e;
+}
+
+.prevBtn {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 56%;
+  left: 32%;
+}
+
+.nexr-btn {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 56%;
+  left: 82%;
+}
+
+.slide-back {
+  padding: 10px;
+  border: 1px solid #283e46;
+  border-radius: 50%;
+  background: #283e46;
+}
+
+.slide-back:hover {
+  background-color: white;
+  border: 1px solid #ffc300;
+}
+
+.slide-buttons button:disabled .slide-back {
+  background-color: #ddd;
+  cursor: not-allowed;
+  border: 1px solid #ddd;
+}
+.slide-buttons .slide-back {
+  cursor: pointer;
+}
+
+/* .deptName:hover {
+  background-color: white;
+  border: 1px solid gray;
+} */
+
+.scroll-container {
+  overflow: hidden;
+}
+
+.dept-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 95px;
+}
+
+.dept-head h1 {
+  color: #ffc300;
+}
+
+.modal-slide {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.dept-cards {
+  display: grid;
+  /* display: flex; */
+  gap: 4em;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.slide-buttons {
+  /* position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 22%; */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .slide-buttons button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+} */
+
+.act_btn {
+  position: absolute;
+  /* transform: translate(-50%,-50%); */
+  top: 91%;
+  left: 52%;
+}
+
+.deptAbout {
+  font-size: 14px;
+  padding: 10px;
+  max-height: 73px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Adjust this number to fit your desired lines */
+  -webkit-box-orient: vertical;
+  margin-bottom: 10px;
+  color: #08080899;
+  /* white-space: nowrap; */
+}
+
+.action-btn {
+  display: flex;
+  justify-content: end;
+  margin-right: 10px;
+  /* justify-content: space-between; */
+}
+
+.act_btn p,
+.action-btn-sub p {
+  border: 1px solid gray;
+}
+
+.action-btn img {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.bread-crumbs {
+  display: flex;
+}
+
+.dept_name {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.action-btn p {
+  margin: 0px 10px;
+  /* border: 1px solid gray; */
+  padding: 7px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.breadcrumb-p {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 10px;
+}
+
+.bread-about {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.subEachCard {
+  height: 12em;
+}
+
+.action-btn-sub p {
+  width: 178px;
+}
+
+.action-btn-sub {
+  position: absolute;
+  /* transform: translate(-50%,-50%); */
+  top: 171%;
+  left: 91%;
+}
+/* 
+.deptHead {
+  
+} */
+
+.subDeptCard {
+  justify-content: center;
+}
+
+.dept-icon {
+  position: relative;
+  top: 6px;
+  margin-right: 7px;
+}
+
+.sub-dept {
+  color: var(--secondary-color);
+  margin-left: 10px;
+  cursor: context-menu;
+  /* display: flex; */
+}
+
+.subDepartments {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.subDepartments-one {
+  /* border: 1px solid gray; */
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: lightgray;
+}
+
+.subDepartments-one:hover {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.sub-department-item {
+  border: 1px solid red;
+}
+
+
+.dept-icon {
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+
+/* .modal-slide-in {
+  top: 20%;
+  background: white;
+  border-radius: 10px;
+  width: 90%;
+  position: relative;
+  height: 100%;
+  animation: slideUp 1s ease-out;
+} */
+
+/* @keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0); 
+  }
+}
+
+.card-data {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-left: 27px;
+    margin-top: 10px;
+} */

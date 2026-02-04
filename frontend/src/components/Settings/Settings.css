@@ -1,0 +1,275 @@
+.settings-container {
+  /* width: 500px; */
+  margin: 0 auto;
+  padding: 20px;
+  /* border: 1px solid #ddd; */
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.userProfile {
+  display: flex;
+  gap: 1em;
+}
+
+.userName {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--main-color);
+}
+.userEmail {
+  color: gray;
+}
+.settings-container h2 {
+  margin-bottom: 16px;
+}
+
+.secondBox,
+.thirdBox {
+  /* border: 1px solid #e1f2ef; */
+  /* padding: 0.5em 0.5em 1em 0; */
+  border-radius: 10px;
+  padding: 0 0 0.5em 0;
+  /* background: #e1f2ef30; */
+  margin: 1em 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.secondBoxChild {
+  display: flex;
+  gap: 3em;
+  /* padding: 0 0 0 0.8em; */
+  width: 100%;
+}
+.user-btn {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  border-radius: 25px;
+  padding: 0.2em 0.5em;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Inter", sans-serif;
+}
+.last-div {
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 0 0.5em 0.5em 0;
+  justify-content: flex-end;
+  gap: 0.5em;
+  margin:0.5em;
+}
+
+.cancel-user-btn {
+  color: #e74c3c;
+  border: 1px solid #e74c3c;
+  border-radius: 25px;
+  padding: 0.2em 0.5em;
+  /* border: none; */
+  font-weight: 500;
+  cursor: pointer;
+}
+.headerForSecondBox {
+  /* border: 1px solid red; */
+  padding: 0.5em 0.5em;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* background-color: #e1f2ef; */
+  background-color: #edede9;
+  /* background-color: var(--main-color); */
+  font-weight: 500;
+  font-size: 1.2em;
+  color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+}
+.editBtn {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  border-radius: 25px;
+  padding: 6px 9px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.3s ease;
+  font-family: "Inter", sans-serif;
+}
+.personal_info {
+  display: flex;
+  justify-content: space-between;
+}
+.nameFieldsSettings {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  margin: 0.5em;
+}
+
+.nameFieldsSettings select {
+  padding: 0.57em;
+  font-size: 0.9em;
+  border-radius: 4px;
+  border: 1.5px solid #adb5bd;
+  color: #343a40;
+}
+.nameFieldsSettings input {
+  padding: 0.4em;
+  font-size: 0.9em;
+  border-radius: 4px;
+  border: 1.5px solid #adb5bd;
+  color: #343a40;
+  outline: none;
+  
+}
+
+.alignButton {
+  width: 140px;
+  margin-top: 1em;
+}
+.emailReadonly {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc; /* Optional: border styling */
+  cursor: default;
+  pointer-events: none;
+}
+/* .emailReadonly {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 8px;
+  color: #777;
+  width: 250px;
+} */
+
+.editable {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 8px;
+  color: black;
+  width: 250px;
+}
+
+.profileSideLeftHeadingIcon {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+}
+
+/* .settings-container input,
+.settings-container select {
+  width: 100%;
+  padding: 6px;
+  margin-top: 4px;
+  box-sizing: border-box;
+} */
+
+/* .settings-container button {
+  padding: 8px 12px;
+  margin-top: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+.pwdToggleIcon {
+  position: absolute;
+  top: 34px;
+  right: 3px;
+  cursor: pointer;
+  width: 18px;
+}
+.error-message-container {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem; /* 1.5 * 0.25rem = 6px */
+  height: 30px;
+  color: #dc2626; /* Tailwind's text-red-600 */
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin-top: 0.25rem;
+  font-size: 0.75rem; /* Default to xs */
+}
+
+@media (min-width: 768px) {
+  .error-message-container {
+    font-size: 1.125rem; /* md:text-lg */
+  }
+}
+
+@media (min-width: 1024px) {
+  .error-message-container {
+    font-size: 1.125rem; /* lg:text-lg */
+  }
+}
+
+@media (min-width: 1280px) {
+  .error-message-container {
+    font-size: 0.875rem; /* xl:text-sm */
+  }
+}
+
+.error-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.error-text {
+  color: #dc2626; /* text-red-600 */
+  font-size: inherit;
+}
+
+.error-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* equivalent to gap-2 */
+  height: 30px;
+  padding-top: 0.25rem; /* py-1 */
+  padding-bottom: 0.25rem;
+  margin-top: 0.25rem;  /* mt-1 */
+}
+
+.visible-error {
+  color: #dc2626; /* Tailwind's red-600 */
+  font-size: 0.75rem; /* default text-xs */
+}
+
+/* Responsive font sizes for .visible-error and .error-text */
+@media (min-width: 768px) {
+  .visible-error,
+  .error-text {
+    font-size: 1.125rem; /* md:text-lg */
+  }
+}
+@media (min-width: 1024px) {
+  .visible-error,
+  .error-text {
+    font-size: 1.125rem; /* lg:text-lg */
+  }
+}
+@media (min-width: 1280px) {
+  .visible-error,
+  .error-text {
+    font-size: 0.875rem; /* xl:text-sm */
+  }
+}
+
+.hidden-error {
+  visibility: hidden;
+}
+
+.error-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.error-text {
+  font-size: 0.75rem; /* default to text-xs */
+}
+
+.sub-heading{
+  margin:  0 0 0 0.6em;
+}

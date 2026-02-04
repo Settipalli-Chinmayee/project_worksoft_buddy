@@ -1,0 +1,38 @@
+
+.column-header {
+  white-space: normal;
+  word-break: break-word;
+  text-align: center;
+  width: 100%;
+}
+
+.cell-center {
+  text-align: center;
+  width: 100%;
+}
+
+.highlight-pending {
+ background-color: #e5e5e5;
+  color: #6c757d;
+  padding: 5px 10px;
+  font-weight: 500;
+  border-radius: 25px;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+}
+.highlight-pending  img{
+  width: 18px;
+  height: 18px;
+}
+
+.highlight-rejected{
+  color: #dc3545;
+  background-color: #fcebec;
+   padding: 5px 10px;
+  font-weight: 500;
+  border-radius: 25px;
+  display: flex;
+  width: fit-content;
+
+}
