@@ -20,7 +20,7 @@ import pwdCloseIcon from "../../assets/images/pwdCloseIcon.svg";
 import sucess from "../../assets/images/success.svg";
 
 const ResetPassword = () => {
-  document.title = "HR BOT | Reset Password";
+  document.title = "Worksoft Buddy | Reset Password";
 
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");

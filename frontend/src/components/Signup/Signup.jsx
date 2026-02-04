@@ -15,7 +15,7 @@ import sucess from "../../assets/images/success.svg";
 import Footer from "../../commonFolder/Footer/Footer";
 
 const Signup = () => {
-  document.title = "Blog Buddy | Signup";
+  document.title = "Worksoft Buddy | Signup";
 
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");

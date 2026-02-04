@@ -14,7 +14,7 @@ import pwdOpenDark from "../../assets/images/pwdOpenDark.svg";
 import pwdCloseDark from "../../assets/images/pwdCloseDark.svg";
 
 const Login = () => {
-  document.title = "Blog Buddy | Login";
+  document.title = "Worksoft Buddy | Login";
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [visible, setVisible] = useState(false);
@@ -296,7 +296,7 @@ const Login = () => {
                 />
               </div>
               <div className="text-base text-center font-semibold md:text-xl lg:text-2xl">
-                <p>Blog Buddy</p>
+                <p>Worksoft Buddy</p>
               </div>
 
               {/* Email Input */}

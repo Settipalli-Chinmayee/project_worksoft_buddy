@@ -54,7 +54,7 @@ const Footer = () => {
           } text-[0.6em] sm:text-[0.7em] md:text-[0.6em] lg:text-[0.6em] xl:text-[0.8em] cursor-pointer`}
         >
           {" "}
-          Copyright <span>&#169;</span> 2025 Qualesce
+          Copyright <span>&#169;</span> 2026 Qualesce
         </p>
 
         {/* Center */}

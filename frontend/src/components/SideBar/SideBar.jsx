@@ -96,7 +96,7 @@ const SideBar = ({
               <img src={qlogo} alt="Logo" className="w-10 h-10" />
             </div>
             <h1 className="changeText text-[1.3em] text-[#283E46] font-bold font-display">
-              Blog Buddy
+              Worksoft Buddy
             </h1>
             {/* <h1 className="changeText text-[1.3em] text-[#283E46] font-bold font-display">
               HR BOT

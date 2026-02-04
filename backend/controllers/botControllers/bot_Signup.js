@@ -46,7 +46,7 @@ function signupEmailTemplate(userName) {
         <body>
             <div class="container">
                 <h2>Welcome, ${userName}!</h2>
-                <p>Thank you for registering with <strong>Qualesce HR Bot</strong>! Your HR assistant is ready to help you manage tasks effortlessly.</p>
+                <p>Thank you for registering with <strong>Qualesce Worksoft Buddy</strong>! Your HR assistant is ready to help you manage tasks effortlessly.</p>
                 <p class="footer">Best regards,<br><strong>Qualesce</strong></p>
             </div>
         </body>
@@ -125,11 +125,11 @@ const signupPage = async (req, res) => {
       // Email Configuration
       const emailConfig = {
         from: {
-          name: "HR Bot",
+          name: "Worksoft Buddy",
           address: process.env["SENDER_EMAIL"],
         },
         to: email, // Replace with recipient's email
-        subject: "✅ You're In! HR Bot Signup Successful",
+        subject: "✅ You're In! Worksoft Buddy Signup Successful",
         text: "Your signup is successful", // Plain text body
         html: SignupHtmlBody, // HTML body
       };

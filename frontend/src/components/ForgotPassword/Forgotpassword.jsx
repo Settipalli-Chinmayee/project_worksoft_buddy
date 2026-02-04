@@ -14,7 +14,7 @@ import sucess from "../../assets/images/success.svg";
 
 
 const Forgotpassword = () => {
-  document.title = "XML Chatbot | Forgot Password";
+  document.title = "Worksoft Buddy | Forgot Password";
 
   const [email, setEmail] = useState("");
   const [errorMessage, setErrorMessage] = useState("");

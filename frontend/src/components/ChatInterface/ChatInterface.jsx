@@ -46,7 +46,7 @@ const ChatInterface = () => {
   // console.log("isDark---",isDarks)
 
   useEffect(() => {
-    document.title = "Blog Buddy";
+    document.title = "Worksoft Buddy";
   }, []);
 
   const location = useLocation();
@@ -61,7 +61,7 @@ const ChatInterface = () => {
   // console.log(userDetails,'user details')
   // console.log(authentication, "auth");
   // useEffect(() => {
-  //   document.title = "Blog Buddy";
+  //   document.title = "Worksoft Buddy";
   // }, []);
 
   const [question, setQuestion] = useState("");
@@ -954,7 +954,7 @@ const ChatInterface = () => {
                 {!isClicked && (
                   <div className="welcomeContent">
                     <h1 className="headingOne welcomeHeading">Welcome to,</h1>
-                    <h1 className="headingOne  hrBotHeading ">Blog Buddy</h1>
+                    <h1 className="headingOne  hrBotHeading ">Worksoft Buddy</h1>
                     {/* <h1 className={`text-3xl font-semibold font-display mb-2  subHeading ${isDark ? "dark-theme-text-gradient" :"text-gradient"}`}> */}
                     {/* <h1 className={`text-3xl font-semibold font-display mb-2  subHeading text-gradient`}> */}
                     <h1 className="subHeading subheading_hr">
