@@ -15,6 +15,8 @@ import pwdCloseDark from "../../assets/images/pwdCloseDark.svg";
 
 const Login = () => {
   document.title = "Worksoft Buddy | Login";
+  const BASE_URL = import.meta.env.VITE_BASE_URL
+  // console.log(BASE_URL)
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [visible, setVisible] = useState(false);
@@ -109,9 +111,10 @@ const Login = () => {
       // setSuccessMessage("");
       setFadeOut(false); // Reset fade-out effect
       const data = { email, password };
+      console.log(BASE_URL)
       try {
         const response = await fetch(
-          "https://worksoftbuddyapi.qualesce.com/api/v1/users",
+          `${BASE_URL}/users`,
           // "http://localhost:3001/api/v1/users",
           {
             method: "POST",
@@ -131,7 +134,7 @@ const Login = () => {
             // console.log(result.userId)
             sessionStorage.setItem("userName", userName);
             sessionStorage.setItem("userId", userId);
-            navigate("/blogBuddy", {
+            navigate("/worksoftBuddy", {
               replace: true,
               state: {
                 userEmail: result.userEmail,

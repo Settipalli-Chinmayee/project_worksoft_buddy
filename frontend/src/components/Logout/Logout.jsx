@@ -4,13 +4,14 @@ import { Link, useNavigate } from "react-router-dom"
 
 const Logout = () => {
     const navigate = useNavigate()
+  const BASE_URL = import.meta.env.VITE_BASE_URL
     
     const logoutPage = async (e) => {
         // console.log("hello");
         e.preventDefault()
         // navigate('/login')
         try {
-            const response = await fetch('https://worksoftbuddyapi.qualesce.com/api/v1/users/logout', {
+            const response = await fetch(`${BASE_URL}/users/logout`, {
                 method: 'POST',
                 credentials: 'include',
             });

@@ -1,0 +1,307 @@
+Date, location, IP, User, Error
+11/Feb/2026 11:01:28 am, GMT+0530 (India Standard Time),QQ0146,192.168.102.90,ChinmayeeSettipalli,NA
+2026-02-11T05:31:41.166Z - 6982d88a159b19398579f3bf - Query: Hi, How are you?
+Matching Data:
+I'm doing well, thank you! 😊 
+
+Here's a summary based on the documents you provided about the Worksoft Continuous Testing Manager:
+
+1. **Adding Recordsets**: You can attach a recordset to a specific process by clicking the "Attach Recordset" button next to it. After selecting a recordset, the process row will change color to blue, indicating the attachment. Only one recordset can be added per process.
+
+2. **Editing Processes**: If you want to make changes to a process, you can click the "Configure Process" button. Additionally, if you want to run a process multiple times, the "Clone Process" button will create a duplicate in the list of processes.
+
+3. **Editing Desktop Credentials**: Navigate to the Desktop Credentials page and click the "Edit" button next to the desired credential. After making necessary edits, save your changes and confirm with "OK".
+
+4. **Setting Resolution for CTM Agents**: To adjust the display resolution for CTM Agents on remote machines, access the `appsettings.config` file found in the CTM Agent installation directory and modify the `ScreenWidth` and `ScreenHeight` values.
+
+5. **Downloading the CTM Agent**: The CTM Agent can be downloaded from within the Continuous Testing Manager or via the software distribution package. You will access the Download Agent page from the Configuration menu.
+
+6. **Creating CTM Suites**: CTM Suites are comprised of Certify processes that can be scheduled for execution. You can view ongoing suites and execution results on the Home screen, and manually run suites from the Suites screen.
+
+7. **Executions**: The Executions screen displays all execution results with filtering options to help locate specific details.
+
+If you have any more questions or need further clarification, just let me know! 😊
+
+2026-02-11T05:32:01.372Z - 6982d88a159b19398579f3bf - Query: Hi, How are you?
+Matching Data:
+I’m doing well, thank you! 😊
+
+Based on the documents you've provided about the Worksoft Continuous Testing Manager (CTM), here’s a summary of the key points:
+
+1. **Adding Recordsets to Processes**:
+   - Click the "Attach Recordset" button next to the desired process.
+   - You can only add one recordset per process. Use the search function if needed, and click "Close" when done.
+
+2. **Editing Processes**:
+   - Click the "Configure Process" button next to a process to make edits.
+   - If you want to create a duplicate of a process to run it multiple times, use the "Clone Process" button.
+
+3. **Editing Desktop Credentials**:
+   - Click the "Edit" button next to the desktop credential you wish to modify, apply changes, and then click "Save & Done" to confirm edits.
+
+4. **Setting Agent Resolution**:
+   - For remote machines with the CTM Agent, you can set the resolution by editing the `appsettings.config` file located in the installation directory. Change the values for `ScreenWidth` and `ScreenHeight`, then save the file.
+
+5. **Downloading the CTM Agent Installer**:
+   - The CTM Agent Installer can be downloaded from the “Configuration” menu in CTM or from the software distribution package.
+
+6. **Creating and Managing CTM Suites**:
+   - The CTM interface includes several screens such as Home, Suites, Executions, and Configuration, each serving specific functions like managing suites and viewing execution results.
+
+7. **Using the Executions Screen**:
+   - Track execution results and utilize filters to assist in locating specific execution details.
+
+If you have any other questions or need further details on a specific part, feel free to ask! 😊
+
+2026-02-11T05:32:27.235Z - 6982d88a159b19398579f3bf - Query: Hi, How are you?
+Matching Data:
+I'm doing well, thank you! 😊 
+
+Here's a summary based on the documents you provided regarding the Worksoft Continuous Testing Manager:
+
+1. **Adding Recordsets**:
+   - Click "Attach Recordset" next to the process you want to modify. Only one recordset can be added per process, and the selected process will highlight in blue.
+   - You can use the search feature for easier navigation but if you selected process folders, adding recordsets isn't permitted.
+   - To remove an existing recordset, simply click "Remove" and then "Close" the dialog.
+
+2. **Editing Processes**:
+   - Click the "Configure Process" button to make edits, and use "Clone Process" if you want to run the same process multiple times. The cloned process will be added to the List of Processes.
+
+3. **Editing Desktop Credentials**:
+   - Access the Desktop Credentials page, click "Edit" next to the desired credential, make your changes, and select "Save & Done" to confirm.
+
+4. **Setting Resolution for CTM Agents**:
+   - To set the resolution for the CTM Agent on remote machines, edit the `appsettings.config` file located in `C:\Program Files (x86)\Worksoft\Worksoft Continuous Testing Manager Agent`. You can set the screen width and height for your executions.
+
+5. **Downloading the CTM Agent**:
+   - The CTM Agent can be downloaded from the Configuration menu in CTM or from the software distribution package. 
+
+6. **Creating and Managing CTM Suites**:
+   - CTM consists of several pages, including Home (for summaries and results), Suites (for creating and managing CTM suites), and Executions (for tracking execution details).
+   - You can manually run or edit your suites from the Suites screen.
+
+If you have more specific questions or need further assistance, just let me know! 😊
+
+2026-02-11T05:32:40.764Z - 6982d88a159b19398579f3bf - Query: Hi, How are you?
+Matching Data:
+I'm doing well, thank you! 😊 
+
+Based on the documents you provided, here's a summary of the key functionalities related to the Worksoft Continuous Testing Manager (CTM):
+
+1. **Attaching Recordsets**: You can add a recordset to a process by clicking the "Attach Recordset" button next to it. You can only select one recordset per process, and if needed, you can search for specific recordsets.
+
+2. **Editing Processes**: To make modifications to a process, use the "Configure Process" button. If you require multiple executions of a process, utilize the "Clone Process" button to create a duplicate.
+
+3. **Editing Desktop Credentials**: To edit existing desktop credentials, select the "Edit" button next to the credential, make your edits, and then save your changes.
+
+4. **Setting Resolution for CTM Agents**: To set a resolution for the CTM Agent installed on remote machines, access the `appsettings.config` file and adjust the `ScreenWidth` and `ScreenHeight` values as required.
+
+5. **Downloading the CTM Agent**: The CTM Agent can be downloaded either from the Configuration menu in CTM or from the software distribution package.
+
+6. **Creating CTM Suites**: CTM allows you to create and manage suites that consist of Certify processes, which can be scheduled for execution on the CTM Agent. You can view execution results and current statuses on the Home screen.
+
+The documents outline how to efficiently manage processes, credentials, and configurations within the Continuous Testing Manager. If you have any more questions or need further assistance, let me know! 😊
+
+2026-02-11T05:35:45.241Z - 6982d88a159b19398579f3bf - Query: Hi, How are you?
+Matching Data:
+I’m doing well, thank you! 😊 
+
+Here's a summary of the key points from the provided documents regarding the Worksoft Continuous Testing Manager:
+
+1. **Adding Recordsets to Processes**:
+   - Click "Attach Recordset" next to the desired process to add a recordset. Selecting a recordset will change the process row color to blue, indicating selection. Only one recordset can be selected per process.
+   - If processes are organized in folders, recordsets cannot be added to them. You can search for specific recordsets if needed.
+
+2. **Editing Processes**:
+   - To edit a process, click the "Configure Process" button. To run a process multiple times, use the "Clone Process" option to create a duplicate in the List of Processes.
+
+3. **Editing Desktop Credentials**:
+   - On the Desktop Credentials page, click "Edit" next to the credential you wish to modify. After editing, click "Save & Done" and confirm the changes.
+
+4. **Setting Agent Resolution**:
+   - For CTM Agents on remote machines, you can set the resolution by editing the `appsettings.config` file located at `C:\Program Files (x86)\Worksoft\Worksoft Continuous Testing Manager Agent`. Update the `ScreenWidth` and `ScreenHeight` values to set the default resolution for executions.
+
+5. **Downloading the CTM Agent Installer**:
+   - The CTM Agent installer can be downloaded from the Configuration menu or from a software distribution package.
+
+6. **Creating CTM Suites**:
+   - You can create and edit CTM suites, which consist of Certify processes to be scheduled for execution on CTM Agents. The Home screen displays information about running suites, pending tests, and execution results.
+
+7. **Executions**:
+   - The Executions screen details all execution results, allowing you to filter for specific outcomes.
+
+If you have further questions or need assistance with something specific, feel free to ask! 😊
+
+2026-02-11T05:35:59.728Z - 6982d88a159b19398579f3bf - Query: Hi, How are you?
+Matching Data:
+I’m doing well, thank you! 😊 
+
+Based on the documents you've provided, here's a summary of the processes related to the Worksoft Continuous Testing Manager (CTM):
+
+1. **Adding Recordsets**: To attach a recordset to a process, click the "Attach Recordset" button next to the process. You can select only one recordset per process, and the row will change color to blue upon selection. The Search feature can help find specific recordsets. To remove a recordset, click "Remove" and then close the dialog.
+
+2. **Editing Processes**: If you need to edit a process, click the "Configure Process" button. For running a process multiple times, use the "Clone Process" button to add a duplicate to the list.
+
+3. **Editing Desktop Credentials**: On the Desktop Credentials page, click the "Edit" button next to the credential you want to modify. After applying your changes, click "Save & Done" and confirm with "OK".
+
+4. **Setting Agent Resolution**: You can set the resolution for CTM Agents on remote machines by editing the `appsettings.config` file found in the installation directory. Adjust the `ScreenWidth` and `ScreenHeight` values and save the file to set default resolution values for future executions.
+
+5. **Downloading the CTM Agent Installer**: The Agent installer can be downloaded from the Configuration menu in CTM or through a software distribution package. Simply select "Download Agent" from the configuration options to begin downloading.
+
+6. **Creating CTM Suites**: You can create and manage CTM suites which consist of one or several Certify processes that will run on the CTM Agent. The Home screen provides an overview of running suites and execution results, while the Suites screen allows manual execution of a suite.
+
+7. **Tracking Executions**: The Executions screen displays all execution results, enabling you to filter and find specific details about each execution.
+
+If you have any more questions or if there's something specific you’d like to know, feel free to ask! 😊
+
+2026-02-11T05:36:58.216Z - 6982d88a159b19398579f3bf - Query: Hi, How are you?
+Matching Data:
+I’m doing well, thank you! 😊 
+
+Here’s a summary based on the documents you provided related to the Worksoft Continuous Testing Manager (CTM):
+
+1. **Adding Recordsets**: To add a recordset to a process, click the "Attach Recordset" button. You can only add one recordset per process, and the selected process row will change color to blue. If you need to look for a specific recordset, use the search feature. You can remove a recordset by clicking "Remove".
+
+2. **Editing Processes**: If you want to make changes to a specific process, click the "Configure Process" button. You can also clone a process by clicking "Clone Process," which will create a duplicate entry in the list of processes.
+
+3. **Editing Desktop Credentials**: Go to the Desktop Credentials page and click "Edit" next to the credential you want to modify. After making changes, click "Save & Done" and confirm with "OK".
+
+4. **Setting Resolution for CTM Agents**: To set the screen resolution for remote machines with CTM Agent installed, edit the `appsettings.config` file found in `C:\Program Files (x86)\Worksoft\Worksoft Continuous Testing Manager Agent`. You can set the `ScreenWidth` and `ScreenHeight` values to your preferences.
+
+5. **Downloading the CTM Agent**: The CTM Agent installer can be downloaded from the Configuration menu in CTM or through the software distribution package. Follow the prompts to download and save the installer on your system.
+
+6. **Creating CTM Suites**: You can create and manage CTM suites consisting of Certify processes that will be executed on CTM Agents. The Home screen summarizes ongoing suites and results, while the Suites screen allows manual execution and editing of suites.
+
+7. **Using the Executions Screen**: The Executions screen provides a detailed view of all execution results, with options to filter for specific details.
+
+If you have further questions or need additional information, just let me know! 😊
+
+2026-02-11T05:37:12.882Z - 6982d88a159b19398579f3bf - Query: Hi, How are you?
+Matching Data:
+I’m doing well, thank you! 😊 
+
+Here's a summary based on the information you provided about the Worksoft Continuous Testing Manager (CTM):
+
+1. **Adding Recordsets**: 
+   - To attach a recordset to a process, click the "Attach Recordset" button. You can select only one recordset per process, and the selected process row will change color to blue. You can also use the Search feature for specific recordsets.
+
+2. **Editing Processes**:
+   - Click "Configure Process" to edit an existing process.
+   - Use "Clone Process" if you want to create a duplicate of the process for multiple executions.
+
+3. **Editing Desktop Credentials**:
+   - On the Desktop Credentials page, click "Edit" next to the relevant credential, make your changes, and save.
+
+4. **Setting Agent Resolution**:
+   - To set the resolution for CTM Agents on remote machines, edit the `appsettings.config` file located at `C:\Program Files (x86)\Worksoft\Worksoft Continuous Testing Manager Agent`, and set the desired `ScreenWidth` and `ScreenHeight`.
+
+5. **Downloading the CTM Agent Installer**:
+   - You can download the CTM Agent from the Configuration menu in CTM or via the software distribution package.
+
+6. **Creating CTM Suites**:
+   - CTM consists of several screens including Home (for current suite summaries), Suites (for creating and editing suites), Executions (for tracking execution results), and Configuration (for managing settings and downloading agents).
+
+7. **Visualizing Execution Results**:
+   - Use the Executions screen to filter and locate specific execution details easily.
+
+If you have any more questions or need assistance with specific tasks, feel free to ask! 😊
+
+2026-02-11T05:37:37.518Z - 6982d88a159b19398579f3bf - Query: Hi, How are you?
+Matching Data:
+I’m doing well, thank you! 😊 
+
+Here’s a summary based on the documents you shared about the Worksoft Continuous Testing Manager (CTM):
+
+1. **Adding Recordsets to Processes**:
+   - Click the "Attach Recordset" button next to a process.
+   - You can only add one recordset per process; if you need to search for one, there's a search feature available.
+   - After selecting, the process row will change to blue. To remove a recordset, you can click "Remove" and then "Close".
+
+2. **Editing Processes**:
+   - To edit a process, click the "Configure Process" button next to it.
+   - If you want to run a process multiple times, use the "Clone Process" button; a duplicate will be added to the List of Processes.
+
+3. **Editing Desktop Credentials**:
+   - On the Desktop Credentials page, click "Edit" next to the desired credential.
+   - Make the necessary edits and then hit "Save & Done" to confirm.
+
+4. **Setting Resolution for CTM Agents**:
+   - On the machine with the CTM Agent, edit the `appsettings.config` file located in `C:\Program Files (x86)\Worksoft\Worksoft Continuous Testing Manager Agent`.
+   - Set the `ScreenWidth` and `ScreenHeight` to your preferred resolution values and save the file.
+
+5. **Downloading the CTM Agent Installer**:
+   - You can download the CTM Agent installer from the Configuration menu in CTM or through a software distribution package.
+   - Follow prompts to save the Agent installer file after downloading.
+
+6. **Creating CTM Suites**:
+   - CTM allows you to create and manage suites, which can include one or multiple Certify processes scheduled for execution on the CTM Agent.
+   - The Home screen provides summaries of currently running suites and execution results, while the Executions screen displays detailed execution results with filtering options.
+
+If you have any specific questions or need more details, feel free to ask! 😊
+
+2026-02-11T05:37:59.612Z - 6982d88a159b19398579f3bf - Query: Hi, How are you?
+Matching Data:
+I’m doing well, thank you! 😊 
+
+Here's a summary based on the documents you've provided regarding the Worksoft Continuous Testing Manager (CTM):
+
+1. **Adding Recordsets**: You can attach a recordset to a specific process by clicking the "Attach Recordset" button next to the process. After selecting a recordset, the corresponding process row will change to blue, indicating the attachment. There is a limit of one recordset per process, and you can use a search feature to find specific recordsets. Click "Remove" to detach a recordset when needed.
+
+2. **Editing Processes**: If you need to make edits, click the "Configure Process" button next to the desired process. For running a process multiple times, you can use the "Clone Process" feature, which duplicates the process in the list.
+
+3. **Editing Desktop Credentials**: To modify desktop credentials, navigate to the Desktop Credentials page, click "Edit" next to the credential you wish to change, apply your modifications, and then click "Save & Done".
+
+4. **Setting Agent Resolution**: The resolution for CTM Agents on remote machines can be set by editing the `appsettings.config` file located in the installation directory. You can define default screen width and height settings.
+
+5. **Downloading the CTM Agent Installer**: You can download the CTM Agent installer either from within CTM by navigating to Configuration and selecting "Download Agent" or through the software distribution package.
+
+6. **Creating CTM Suites**: CTM allows for the creation and management of suites, which can be individual Certify processes or groups scheduled for execution on a CTM Agent. The Home screen summarizes running suites and execution results, while the Executions screen provides detailed views of execution outcomes.
+
+If you have any specific questions or need further help with CTM, feel free to ask! 😊
+
+2026-02-11T05:38:08.964Z - 6982d88a159b19398579f3bf - Query: Hi, How are you?
+Matching Data:
+I'm doing well, thank you! 😊 
+
+Here’s a condensed summary based on the documents you provided about the Worksoft Continuous Testing Manager (CTM):
+
+1. **Adding Recordsets**: You can click the "Attach Recordset" button next to a process to add a recordset. Only one can be added per process, which will change color to blue upon selection. If you need to remove it, click "Remove."
+
+2. **Editing Processes**: Click "Configure Process" to edit an existing process, or "Clone Process" to duplicate a process for multiple runs.
+
+3. **Desktop Credentials**: To edit desktop credentials, click "Edit" next to the credential and make your changes. Save your edits to apply them.
+
+4. **Setting Agent Resolution**: To set resolution for CTM Agents, edit the `appsettings.config` file in the installation directory, adjusting `ScreenWidth` and `ScreenHeight` to your preferred values.
+
+5. **Downloading the CTM Agent Installer**: You can download the CTM Agent either from the Configuration menu in CTM or from a software distribution package.
+
+6. **Creating CTM Suites**: The CTM interface includes pages such as Home, Suites, Executions, and Configuration, allowing you to manage processes, run suites, and view execution results.
+
+If you have any questions or need assistance with anything specific, just let me know! 😊
+
+2026-02-11T05:40:30.974Z - 6982d88a159b19398579f3bf - Query: How can I set my suite to execute in specific RDP
+Matching Data:
+To set your suite to execute in a specific RDP (Remote Desktop Protocol) environment using the Worksoft Continuous Testing Manager (CTM), follow these steps:
+
+1. **Add Desktop Credentials**:
+   - Ensure that you have created desktop machines and added the necessary desktop credentials. This can be done on the **Desktop Credentials** page where you edit credentials for your specific RDP.
+
+2. **Edit Desktop Credentials**:
+   - Click the **Edit** button next to the desktop credential you want to set for your suite execution. 
+   - Make any necessary edits and save the changes by clicking **Save & Done**.
+
+3. **Select RDP in Your Suite**:
+   - When creating or editing a suite, ensure that you select the desktop credential associated with the specific RDP where you want the suite to execute.
+   - The suite will then be executed on the machine linked with that desktop credential.
+
+4. **Download and Set Up the CTM Agent**:
+   - If not already done, install the CTM Agent on the machine intended for execution. You can download the CTM Agent installer either from CTM or via the software distribution package.
+
+5. **Set Screen Resolution** (Optional):
+   - If needed, set the resolution for the CTM Agent on the remote machine by editing the `appsettings.config` file located in the CTM Agent installation directory.
+   - Adjust the `<add key="ScreenWidth" value="1920"/>` and `<add key="ScreenHeight" value="1080"/>` values to set the screen resolution as desired.
+
+6. **Run Your Suite**:
+   - After everything is set, navigate to the Suites page and select your suite. You can then click the **Run Suite** button to execute it on the specified RDP.
+
+This setup will ensure that your suite runs on the desired remote machine using the designated RDP. If you have any more questions or need further assistance, feel free to ask! 😊

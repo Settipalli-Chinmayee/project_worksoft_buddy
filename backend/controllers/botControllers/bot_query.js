@@ -206,6 +206,8 @@ const botQuery = async (req, res) => {
 
     // If it's greeting + a query, continue processing after greeting
     greetingMessage = `Hello, ${userName}! 😊`;
+
+    console.log("Greet Text",greetingMessage)
     conversationHistory.push({ role: "assistant", content: greetingMessage });
     // No `return` — continue processing the query below
   }

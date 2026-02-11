@@ -37,7 +37,7 @@ app.use(
 app.use(
   cors({
     origin: [
-      // "http://localhost:5173",
+      "http://localhost:5173",
       "https://worksoftbuddy.qualesce.com","https://www.worksoftbuddy.qualesce.com"
     ],
     // ],

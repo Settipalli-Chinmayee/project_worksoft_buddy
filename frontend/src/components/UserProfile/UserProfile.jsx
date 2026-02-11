@@ -19,6 +19,8 @@ import logout_icon_img from "../../assets/images/logout.svg"
 
 const UserProfile = () => {
   const location = useLocation();
+  const BASE_URL = import.meta.env.VITE_BASE_URL;
+
   const userEmail = location.state?.userEmail;
   const userName = location.state?.userName;
   const [isHovered, setIsHovered] = useState(false);
@@ -253,7 +255,7 @@ const UserProfile = () => {
   const handleLogout = async () => {
     try {
       const response = await fetch(
-        "https://worksoftbuddyapi.qualesce.com/api/v1/users/logout",
+        `${BASE_URL}/users/logout`,
         {
           method: "POST",
           credentials: "include",

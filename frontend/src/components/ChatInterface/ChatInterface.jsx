@@ -34,7 +34,8 @@ import userHistory from "../../assets/images/userHistory.svg";
 import enterQueryDark from "../../assets/images/enterQuery-dark.svg";
 import enterQuery from "../../assets/images/enterQuery.svg";
 import user from "../../assets/images/user.svg";
-import botImage from "../../assets/images/botImage.svg";
+import botImage from "../../assets/images/favicon-96x96.png";
+// import botImage from "../../assets/images/botImage.svg";
 import userRespondedGoodImage from "../../assets/images/userRespondedGoodImage.svg";
 import good_Response from "../../assets/images/goodResponse.svg";
 import userRespondedBadImage from "../../assets/images/userRespondedBadImage.svg";
@@ -44,6 +45,7 @@ import copy from "../../assets/images/copy.svg";
 
 const ChatInterface = () => {
   // console.log("isDark---",isDarks)
+  const BASE_URL = import.meta.env.VITE_BASE_URL;
 
   useEffect(() => {
     document.title = "Worksoft Buddy";
@@ -102,6 +104,7 @@ const ChatInterface = () => {
   const [shouldForceScrollTop, setShouldForceScrollTop] = useState(false);
   const [suggestionClicked, setSuggestionClicked] = useState(false);
   const [queries, setQueries] = useState([]);
+  const [isBot, setIsBot] = useState("");
   const firstRow = queries.slice(0, 2);
 
   const secondRow = queries.slice(2, 4);
@@ -151,7 +154,7 @@ const ChatInterface = () => {
 
       // Check system preference
       const prefersDark = window.matchMedia(
-        "(prefers-color-scheme: dark)"
+        "(prefers-color-scheme: dark)",
       ).matches;
 
       // Determine actual theme
@@ -217,24 +220,18 @@ const ChatInterface = () => {
 
   useEffect(() => {
     const checkAuth = async () => {
-      const response = await fetch(
-        "https://worksoftbuddyapi.qualesce.com/api/v1/users/hrbot",
-        {
-          method: "GET",
-          credentials: "include",
-        }
-      );
+      const response = await fetch(`${BASE_URL}/users/hrbot`, {
+        method: "GET",
+        credentials: "include",
+      });
 
       if (response.status !== 200) {
         navigate("/login");
       }
       if (response.ok) {
-        const getQueries = await fetch(
-          "https://worksoftbuddyapi.qualesce.com/api/v1/users/userQueries",
-          {
-            method: "GET",
-          }
-        );
+        const getQueries = await fetch(`${BASE_URL}/users/userQueries`, {
+          method: "GET",
+        });
         const data = await getQueries.json();
         const filteredData = data.filter((item) => {
           const text = item._id.toLowerCase();
@@ -311,7 +308,7 @@ const ChatInterface = () => {
                   top: "2px",
                 }}
               />
-            </a>
+            </a>,
           );
         } else if (match[5] && match[6]) {
           const label = match[5].trim();
@@ -342,7 +339,7 @@ const ChatInterface = () => {
                   top: "2px",
                 }}
               />
-            </a>
+            </a>,
           );
         } else if (match[0].startsWith("http")) {
           const url = match[0];
@@ -360,7 +357,7 @@ const ChatInterface = () => {
               }}
             >
               {url}
-            </a>
+            </a>,
           );
         }
 
@@ -391,7 +388,7 @@ const ChatInterface = () => {
           .map((cell) => cell.trim())
           .filter(
             (cell, i, arr) =>
-              !(i === 0 && arr.length > 1 && cell === "") && cell !== ""
+              !(i === 0 && arr.length > 1 && cell === "") && cell !== "",
           );
 
         if (index === 0) {
@@ -476,17 +473,17 @@ const ChatInterface = () => {
           elements.push(
             <h3 key={keyCounter++} className="mt-4 font-semibold text-lg">
               {headingText}
-            </h3>
+            </h3>,
           );
         } else if (/^[-]{3,}$/.test(formattedLine)) {
           elements.push(
-            <hr key={keyCounter++} className="my-2 border-gray-300" />
+            <hr key={keyCounter++} className="my-2 border-gray-300" />,
           );
         } else {
           elements.push(
             <p key={keyCounter++} style={{ whiteSpace: "pre-line" }}>
               {parseInlineElements(formattedLine)}
-            </p>
+            </p>,
           );
         }
       }
@@ -538,6 +535,7 @@ const ChatInterface = () => {
     const newChat = {
       question: questionToAsk,
       answer: "Thinking...",
+      status: "thinking",
       timestamp: new Date().toISOString(),
     };
 
@@ -545,17 +543,15 @@ const ChatInterface = () => {
     setFeedback((prev) => [null, ...prev]);
     setActiveIndex(0);
     document.activeElement.blur();
+    // console.log(BASE_URL)
 
     try {
-      const response = await fetch(
-        `https://worksoftbuddyapi.qualesce.com/api/v1/users/ask`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ question: questionToAsk, userName, userId }),
-        }
-      );
-
+      const response = await fetch(`${BASE_URL}/users/ask`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ question: questionToAsk, userName, userId }),
+      });
+      // console.log("response",response)
       if (!response.ok) throw new Error("Failed to fetch response");
 
       const data = await response.json();
@@ -564,9 +560,13 @@ const ChatInterface = () => {
         updated[0] = {
           ...updated[0],
           answer: formatText(data.answer),
+          status: "done",
         };
+        // setIsBot("Thinking...");
+
         return updated;
       });
+      // setIsBot("Worksoft Response");
     } catch (error) {
       console.error("Error:", error);
     } finally {
@@ -653,10 +653,10 @@ const ChatInterface = () => {
     const childrenArray = React.Children.toArray(tableElement.props.children);
 
     const thead = childrenArray.find(
-      (child) => React.isValidElement(child) && child.type === "thead"
+      (child) => React.isValidElement(child) && child.type === "thead",
     );
     const tbody = childrenArray.find(
-      (child) => React.isValidElement(child) && child.type === "tbody"
+      (child) => React.isValidElement(child) && child.type === "tbody",
     );
 
     const headRows = extractRows(thead);
@@ -669,13 +669,13 @@ const ChatInterface = () => {
     allRows.forEach((row) =>
       row.forEach((cell, i) => {
         colWidths[i] = Math.max(colWidths[i] || 0, (cell || "").length);
-      })
+      }),
     );
 
     const pad = (text = "", length) => text + " ".repeat(length - text.length);
 
     const lines = allRows.map((row) =>
-      row.map((cell, i) => pad(cell, colWidths[i])).join(" | ")
+      row.map((cell, i) => pad(cell, colWidths[i])).join(" | "),
     );
 
     if (headRows.length > 0) {
@@ -716,7 +716,7 @@ const ChatInterface = () => {
         const beforeTable = answerArray
           .slice(
             0,
-            answerArray.findIndex((el) => el.type === "table")
+            answerArray.findIndex((el) => el.type === "table"),
           )
           .map((el) => (el?.props ? extractText(el.props.children) : ""))
           .join("\n");
@@ -820,13 +820,10 @@ const ChatInterface = () => {
     setIsDropdown(true);
     console.log(userId);
     try {
-      const response = await fetch(
-        `https://worksoftbuddyapi.qualesce.com/api/v1/users/${userId}/getQuestion`,
-        {
-          method: "GET",
-          headers: { "Content-Type": "application/json" },
-        }
-      );
+      const response = await fetch(`${BASE_URL}/users/${userId}/getQuestion`, {
+        method: "GET",
+        headers: { "Content-Type": "application/json" },
+      });
       const data = await response.json();
       console.log("response for question", data);
       if (response.ok && data?.recentQueries) {
@@ -845,11 +842,11 @@ const ChatInterface = () => {
 
     try {
       const response = await fetch(
-        `https://worksoftbuddyapi.qualesce.com/api/v1/users/${userId}/getQuestion/${query}`,
+        `${BASE_URL}/users/${userId}/getQuestion/${query}`,
         {
           method: "GET",
           headers: { "Content-Type": "application/json" },
-        }
+        },
       );
       const data = await response.json();
       console.log("response for search text", data);
@@ -954,7 +951,9 @@ const ChatInterface = () => {
                 {!isClicked && (
                   <div className="welcomeContent">
                     <h1 className="headingOne welcomeHeading">Welcome to,</h1>
-                    <h1 className="headingOne  hrBotHeading ">Worksoft Buddy</h1>
+                    <h1 className="headingOne  hrBotHeading ">
+                      Worksoft Buddy
+                    </h1>
                     {/* <h1 className={`text-3xl font-semibold font-display mb-2  subHeading ${isDark ? "dark-theme-text-gradient" :"text-gradient"}`}> */}
                     {/* <h1 className={`text-3xl font-semibold font-display mb-2  subHeading text-gradient`}> */}
                     <h1 className="subHeading subheading_hr">
@@ -1092,55 +1091,8 @@ const ChatInterface = () => {
                       />
                     )}
                   </div>
-                  <div
-                    style={{ marginRight: "10px" }}
-                    className="listening_btn"
-                    onClick={voiceQuestion}
-                  >
-                    {isLoading ? (
-                      <>
-                        <img
-                          src={voice}
-                          width={24}
-                          // style={{ marginLeft: "7px" }}
-                          className="hidden sm:block "
-                          alt="Voice Icon"
-                        />
-                        {/* <span className="hidden sm:block">Listening...</span> */}
-                        <img
-                          src={hourGlass}
-                          className="block sm:hidden w-5 h-5 fill-current"
-                          alt=""
-                        />
-                      </>
-                    ) : (
-                      <div className="voiceIconSection">
-                        {/* Desktop text and icon */}
-                        {/* <span className="hidden sm:block">Voice</span> */}
-                        <img
-                          src={voice}
-                          width={24}
-                          // style={{ marginLeft: "7px" }}
-                          className="hidden sm:block "
-                          alt="Voice Icon"
-                        />
-
-                        {/* Mobile hover icon logic */}
-                        <div className="block sm:hidden relative w-5 h-5 ml-[7px]">
-                          <img
-                            src={voice}
-                            className="absolute top-0 left-0 w-5 h-5 group-hover:hidden"
-                            alt="Voice Icon"
-                          />
-                          <img
-                            src={hoverVoice}
-                            className="absolute top-0 left-0 w-5 h-5 hidden group-hover:block"
-                            alt="Hover Voice Icon"
-                          />
-                        </div>
-                      </div>
-                    )}
-                  </div>
+                  {/* Removed Voice icon here */}
+                  {/* Add Voice icon here */}
                   {/* {isVoice ? (
                     <div>
                       <p>Voice search pop up</p>
@@ -1343,8 +1295,11 @@ const ChatInterface = () => {
                           alt="Bot"
                           width="20px"
                         />
-                        <p className="text-[0.6em] sm:text-[0.75em] md:text-base lg:text-[0.65em] text-[gray] relative top-[3px]">
-                          Bot Response
+                        <p className="text-[0.6em] sm:text-[0.75em] md:text-base lg:text-[0.65em] text-[gray] relative top-[2px]">
+                          {/* {isBot && <p>{isBot}</p>} */}
+                          {chat.status === "thinking"
+                            ? "Thinking..."
+                            : "Worksoft Response"}
                         </p>
                       </div>
                     </div>

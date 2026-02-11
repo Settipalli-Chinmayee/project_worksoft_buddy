@@ -125,7 +125,7 @@ function App() {
                 ></Route>
                 {/* <Route path="/" element={<LandingPage />}></Route> */}
                 {/* <Route path="/hrbot" element={<ChatInterface />}></Route> */}
-                <Route path="/blogBuddy" element={<ChatInterface />}></Route>
+                <Route path="/worksoftBuddy" element={<ChatInterface />}></Route>
                 <Route
                   path="/forgotPassword"
                   element={<Forgotpassword />}
